@@ -17,6 +17,12 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p>
+          Participating in the <a href="https://www.colosseum.com/cypherpunk" style={{color: 'var(--ifm-hero-text-color)'}}>Cypherpunk Colosseum</a> hackathon
+        </p>
+        <p>
+          Helped by <a href="https://fr.superteam.fun/" style={{color: 'var(--ifm-hero-text-color)'}}>Superteam France 🇫🇷🥖</a>
+        </p>
         {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -33,11 +39,12 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}>
+      title={`Hello from ${siteConfig.title}`}
+    >
       <HomepageHeader />
-      {/* <main>
+      <main>
         <HomepageFeatures />
-      </main> */}
+      </main>
     </Layout>
   );
 }

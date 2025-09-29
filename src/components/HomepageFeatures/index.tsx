@@ -5,48 +5,50 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
+  image?: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '✨ AI Automation',
+    // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    image: '/img/feature_nature.jpg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Audits are expensive, especially for new projects. Using AI, we leverage as much automation as possible to reduce their cost.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '💯 Reliable',
+    // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    image: '/img/feature_rocket.jpg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Using <a href="https://rocq-prover.org/">formal verification</a>, we make sure audits are extensive, for the checklist we are verifying. No more need to take our words for granted!
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '🤝 Subscription Based',
+    // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    image: '/img/feature_boat.jpg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Pay as you go, a reasonable fee each month, to make sure all your commits are safe and ready to deploy!
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, image, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {Svg && <Svg className={styles.featureSvg} role="img" />}
+        {image && <img src={image} alt={title} className={styles.featureImage} style={{width: 220}} />}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -57,16 +59,15 @@ function Feature({title, Svg, description}: FeatureItem) {
 }
 
 export default function HomepageFeatures(): ReactNode {
-  return <></>;
-  // return (
-  //   <section className={styles.features}>
-  //     <div className="container">
-  //       <div className="row">
-  //         {FeatureList.map((props, idx) => (
-  //           <Feature key={idx} {...props} />
-  //         ))}
-  //       </div>
-  //     </div>
-  //   </section>
-  // );
+  return (
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
