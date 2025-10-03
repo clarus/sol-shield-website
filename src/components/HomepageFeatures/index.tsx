@@ -12,32 +12,38 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '✨ AI Automation',
+    title: 'Automated',
     // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    image: '/img/feature_nature.jpg',
+    image: '/img/feature_lone_penguin.png',
     description: (
       <>
-        Audits are expensive, especially for new projects. Using AI, we leverage as much automation as possible to reduce their cost.
+        Audits are expensive, especially for new projects.<br />
+        Thanks to AI, we leverage automation<br />
+        to reduce the cost to a minimum.
       </>
     ),
   },
   {
-    title: '💯 Reliable',
+    title: 'Reliable',
     // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    image: '/img/feature_rocket.jpg',
+    image: '/img/feature_rocket.png',
     description: (
       <>
-        Using <a href="https://rocq-prover.org/">formal verification</a>, we make sure audits are extensive, for the checklist we are verifying. No more need to take our words for granted!
+        We ensure audits are extensive,<br />
+        for the checklist we are verifying.<br />
+        We use formal verification, so that you do not need to take our words for granted.
       </>
     ),
   },
   {
-    title: '🤝 Subscription Based',
+    title: 'Subscription Based',
     // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    image: '/img/feature_boat.jpg',
+    image: '/img/feature_three_penguins.png',
     description: (
       <>
-        Pay as you go, a reasonable fee each month, to make sure all your commits are safe and ready to deploy!
+        Pay as you go, a reasonable fee each month.<br />
+        We make sure all your commits are safe<br/ >
+        and ready to deploy.
       </>
     ),
   },
@@ -51,7 +57,7 @@ function Feature({title, Svg, image, description}: FeatureItem) {
         {image && <img src={image} alt={title} className={styles.featureImage} style={{width: 220}} />}
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <Heading as="h3" style={{paddingBottom: 12, paddingTop: 20}}>{title}</Heading>
         <p>{description}</p>
       </div>
     </div>

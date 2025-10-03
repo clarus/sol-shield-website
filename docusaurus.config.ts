@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'SolShield',
-  tagline: 'Smart contracts audit with AI for Solana',
+  title: 'Excalead',
+  tagline: 'Smart contracts audit with AI.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -72,9 +72,9 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.png',
     navbar: {
-      title: 'SolShield',
+      title: 'Excalead',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.png',
@@ -88,7 +88,7 @@ const config: Config = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/formal-land/sol-shield',
+          href: 'https://github.com/excalead',
           label: 'GitHub',
           position: 'right',
         },
@@ -132,12 +132,12 @@ const config: Config = {
             // },
             {
               label: 'GitHub',
-              href: 'https://github.com/formal-land/sol-shield',
+              href: 'https://github.com/excalead',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Formal Land`,
+      copyright: `Copyright © ${new Date().getFullYear()} Excalead`,
     },
     prism: {
       theme: prismThemes.github,

@@ -13,15 +13,15 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className="hero__title" style={{fontFamily: "'YourFont', sans-serif", fontSize: 100, marginBottom: 35}}>
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle" style={{marginBottom: 40}}>{siteConfig.tagline}</p>
         <p>
-          Participating in the <a href="https://www.colosseum.com/cypherpunk" style={{color: 'var(--ifm-hero-text-color)'}}>Cypherpunk Colosseum</a> hackathon
+          Participating in the <a href="https://www.colosseum.com/cypherpunk" style={{color: 'var(--ifm-hero-text-color)'}}>Cypherpunk Colosseum Hackathon</a>.
         </p>
         <p>
-          Helped by <a href="https://fr.superteam.fun/" style={{color: 'var(--ifm-hero-text-color)'}}>Superteam France 🇫🇷🥖</a>
+          Helped by <a href="https://fr.superteam.fun/" style={{color: 'var(--ifm-hero-text-color)'}}>Superteam France 🇫🇷🥖</a>.
         </p>
         {/* <div className={styles.buttons}>
           <Link
@@ -39,7 +39,7 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={siteConfig.title}
     >
       <HomepageHeader />
       <main>

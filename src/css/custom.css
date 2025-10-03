@@ -28,3 +28,11 @@
   --ifm-color-primary-lightest: #4fddbf; */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Snow font for the title */
+@font-face {
+  font-family: 'YourFont';
+  src: url('/font/Snow Kei.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
