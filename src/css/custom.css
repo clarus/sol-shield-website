@@ -4,6 +4,13 @@
  * work well for content-centric websites.
  */
 
+@font-face {
+  font-family: 'OurSnowFont';
+  src: url('../fonts/SnowKei.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2254c5;
@@ -15,6 +22,12 @@
   --ifm-color-primary-lightest: #3cad6e; */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* --ifm-font-family-base: "OurSnowFont"; */
+  /* font-family: 'OurSnowFont'; */
+}
+
+.snowTitle {
+  font-family: 'OurSnowFont';
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,12 +40,4 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf; */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
-/* Snow font for the title */
-@font-face {
-  font-family: 'YourFont';
-  src: url('/font/Snow Kei.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }

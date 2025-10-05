@@ -70,6 +70,11 @@ const config: Config = {
     ],
   ],
 
+  stylesheets: [
+    '/css/custom.css',
+    '/css/fonts.css',
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/logo.png',
