@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://solshield.app/',
+  url: 'https://excalead.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -23,8 +23,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'clarus', // Usually your GitHub org/user name.
-  projectName: 'sol-shield-website', // Usually your repo name.
+  organizationName: 'excalead', // Usually your GitHub org/user name.
+  projectName: 'website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -124,7 +124,7 @@ const config: Config = {
             // },
             {
               label: 'X',
-              href: 'https://x.com/GoSolShield',
+              href: 'https://x.com/excalead',
             },
           ],
         },
